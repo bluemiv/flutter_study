@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false, // debug banner 제거
       title: "Drawer App", // app 검색시 이름
       home: HomePage(), // 첫 화면
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
               otherAccountsPictures: <Widget>[
                 CircleAvatar(
                   backgroundColor: Colors.red[200],
-                  backgroundImage: AssetImage("assets/iu.png"),
+                  backgroundImage: const AssetImage("assets/iu.png"),
                 ),
               ],
               onDetailsPressed: () => {

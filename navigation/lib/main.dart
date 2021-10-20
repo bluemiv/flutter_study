@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:navigation/ScreenA.dart';
+import 'package:navigation/ScreenB.dart';
+import 'package:navigation/ScreenC.dart';
 
 void main() => runApp(const MyApp());
 
@@ -7,9 +10,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Navigation",
-      home: FirstPage(),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => const ScreenA(),
+        "/b": (context) => const ScreenB(),
+        "/c": (context) => const ScreenC()
+      },
     );
   }
 }

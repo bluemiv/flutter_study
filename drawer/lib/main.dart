@@ -69,9 +69,41 @@ class HomePage extends StatelessWidget {
                   bottomLeft: Radius.circular(40.0)
                 ),
               ),
-            )
-
+            ),
             // List Tile 구현
+            ListTile(
+              leading: Icon(
+                Icons.home,
+                color: Colors.grey[850],
+              ),
+              title: const Text("Home"),
+              onTap: () => {
+                print("home button clicked")
+              },
+              trailing: const Icon(Icons.add),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.settings,
+                color: Colors.grey[850],
+              ),
+              title: const Text("Setting"),
+              onTap: () => {
+                print("Settings button clicked")
+              },
+              trailing: const Icon(Icons.add),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.question_answer,
+                color: Colors.grey[850],
+              ),
+              title: const Text("Q&A"),
+              onTap: () => {
+                print("Q&A button clicked")
+              },
+              trailing: const Icon(Icons.add),
+            )
           ],
         ),
       ),

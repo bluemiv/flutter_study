@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/dice.dart';
 
 void main() => runApp(const MyApp());
 
@@ -103,19 +104,6 @@ class _LoginState extends State<Login> {
             ),
           );
         }),
-      ),
-    );
-  }
-}
-
-class Dice extends StatelessWidget {
-  const Dice({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Dice Game"),
       ),
     );
   }
